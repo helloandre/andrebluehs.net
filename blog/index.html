@@ -1,0 +1,28 @@
+---
+title: Blog
+layout: default
+---
+{% for post in paginator.posts %}
+    <div class='post'>
+        <div class='date'>{{ post.date | date: "%m/%d/%Y" }}</div>
+        <h1 class='postsubject'>
+            <a href='{{ post.url }}'>{{ post.title }}</a>
+        </h2>
+        {{ post.content }}
+    </div>
+    <hr />
+{% endfor %}
+
+<div class="navigation">
+    {% if paginator.previous_page %}
+        <div class='float-left'>
+            <a href="/page{{paginator.previous_page}}" class="previous"><< Newer Entries</a>
+        </div>
+    {% endif %}
+    {% if paginator.next_page %}
+        <div class='float-right'>
+            <a href="/page{{paginator.next_page}}" class="next ">Older Entries >></a>
+        </div>
+    {% endif %}
+    <div class='clearfix'><div>
+</div>

@@ -1,0 +1,13 @@
+---
+layout: default
+title: Home
+---
+<p>Well, hello there! I'm Andre Bluehs.</p>
+
+<p>Open source projects on <a href="https://github.com/helloandre">github</a>. Non-open source projects on <a href='/projects'>projects page</a>.
+
+<p>Email is <span id='stuff'></span></p>
+<script>
+    document.getElementById('stuff').innerHTML = 'hello' + '@' + window.location.host;
+</script>
+

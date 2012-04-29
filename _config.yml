@@ -1,0 +1,8 @@
+url:         http://andrebluehs.net
+baseurl:    /blog
+
+pygments:    true
+permalink:   /blog/:year/:month/:title/
+paginate:    3
+paginate_file: index.html
+
