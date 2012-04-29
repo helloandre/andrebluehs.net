@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Recursive</title>
+ <title>Andre Bluehs</title>
  <link href="http://andrebluehs.net/feed/" rel="self"/>
  <link href="http://andrebluehs.net/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
