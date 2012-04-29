@@ -2,6 +2,10 @@
 title: Blog
 layout: default
 ---
+<div>
+<a href="#">rss feed</a>
+</div>
+
 {% for post in paginator.posts %}
     <div class='post'>
         <div class='date'>{{ post.date | date: "%m/%d/%Y" }}</div>
