@@ -9,7 +9,7 @@ layout: default
 {% for post in paginator.posts %}
     <div class='post'>
         <div class='date'>{{ post.date | date: "%m/%d/%Y" }}</div>
-        <h1 class='postsubject'>
+        <h1>
             <a href='{{ post.url }}'>{{ post.title }}</a>
         </h2>
         {{ post.content }}

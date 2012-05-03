@@ -6,5 +6,5 @@ permalink:   /blog/:year/:month/:title/
 paginate:    3
 paginate_file: posts.html
 
-exclude: README.md
+exclude: README.md, ideas.txt
 
