@@ -1,5 +1,6 @@
 ---
 title: Converting AVI to MP4 with ffmpeg
+layout: post
 date: 2012-05-10
 ---
 I wanted to convert a file from AVI (mpeg2, mp3) to MP4 (mpeg4, aac) to be able to play it on another device (one without VLC). I found a 'helpful' post on how to [do this](http://www.catswhocode.com/blog/19-ffmpeg-commands-for-all-needs), but the commands were for a much much older (2008) version of ffmpeg. I then came across a [ubuntu forums post](http://ubuntuforums.org/showthread.php?t=1328537) that used the same commands but updated for the neweer (but still 2009) version of ffmpeg. After a little more fiddling, I finally found something that worked fantastic!
@@ -37,7 +38,7 @@ If you don't care much about how the actual ffmpeg command works, you can now ru
 
 I won't go into too much detail about the command, just some high points.
 
-`acodec libfaac`
+`-acodec libfaac`
 
 This uses the [faac](http://www.audiocoding.com/faac.html) codec to encode the audio to aac.
 
