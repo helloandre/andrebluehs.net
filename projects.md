@@ -21,7 +21,7 @@ Post-commit hook magic. Coming soon
 
 Creating and managing interactive brackets for tournaments
 
-[1]: http://newnanteatre.org
+[1]: http://newnantheatre.org
 [2]: http://cakephp.org
 [3]: http://scourgery.com
 [4]: http://bracketfactory.com
