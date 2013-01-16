@@ -13,40 +13,38 @@
 </head>
 
 <body>
-    <div id='container'>
-        <div id='header'>
-            <div id='header-left'>
-                <h2><a id='header-home' href='/'>andre bluehs</a></h2>
-            </div>
-            <div id='header-right'>
-                <ul class='horizontal'>
-                    <li><a id='location'>email</a></li>
-                    <li><a href='http://twitter.com/helloandre' target='_blank'>twitter</a></li>
-                    <li><a href='http://github.com/helloandre' target='_blank'>github</a></li>
-                    <li><a href='http://stackoverflow.com/users/50/helloandre' target='_blank'>stackoverflow</a></li>
-                    <li><a href='/posts'>blog</a></li>
-                </ul>
-            </div>
+    <div id='header'>
+        <div id='header-left'>
+            <h2><a id='header-home' href='/'>andre bluehs</a></h2>
         </div>
-        <div id='sub-header'>
-            <h1>{{ page.title }}</h1>
-        </div>
-        <div id='center' class='post'>
-            {{ content }}
+        <div id='header-right'>
+            <ul class='horizontal'>
+                <li><a id='location'>email</a></li>
+                <li><a href='http://twitter.com/helloandre' target='_blank'>twitter</a></li>
+                <li><a href='http://github.com/helloandre' target='_blank'>github</a></li>
+                <li><a href='http://stackoverflow.com/users/50/helloandre' target='_blank'>stackoverflow</a></li>
+                <li><a href='/posts'>blog</a></li>
+            </ul>
         </div>
     </div>
-    
-    <div id="disqus_thread"></div>
-        <script type="text/javascript">
-            var disqus_shortname = 'helloandre';
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    <div id='sub-header'>
+        <h1>{{ page.title }}</h1>
+    </div>
+    <div id='center' class='post'>
+        {{ content }}
+        
+        <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'helloandre';
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
     </div>
 
     <!-- code highlighting -->
