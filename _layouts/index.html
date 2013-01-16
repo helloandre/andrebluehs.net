@@ -9,35 +9,11 @@
 
     <link rel="shortcut icon" href="/img/favicon.png" />
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/solarized_light.css">
 </head>
-
 <body>
     <div id='container'>
-        <div id='header'>
-            <div id='header-left'>
-                <h2><a id='header-home' href='/'>andre bluehs</a></h2>
-            </div>
-            <div id='header-right'>
-                <ul class='horizontal'>
-                    <li><a id='location'>email</a></li>
-                    <li><a href='http://twitter.com/helloandre' target='_blank'>twitter</a></li>
-                    <li><a href='http://github.com/helloandre' target='_blank'>github</a></li>
-                    <li><a href='http://stackoverflow.com/users/50/helloandre' target='_blank'>stackoverflow</a></li>
-                    <li><a href='/posts'>blog</a></li>
-                </ul>
-            </div>
-        </div>
         {{ content }}
     </div>
-    
-    <!-- syntax highlighting -->
-    <script src="/js/highlight.js"></script>
-    <script>
-        document.getElementById('location').href = 'mailto:hello' + '@' + window.location.host;
-        hljs.initHighlightingOnLoad();
-    </script>
-    
     <!-- google analytics -->
     <script type="text/javascript">
       var _gaq = _gaq || [];

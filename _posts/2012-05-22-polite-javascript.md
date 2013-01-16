@@ -5,10 +5,10 @@ layout: post
 ---
 Let's say you're working with some legacy form submission javascript. You need to grab the value of the input with `id='email'` so you do something like:
 
-    val = document.getElementById('date')
+    val = document.getElementById('email')
     console.log(val)
 
-Printed to the console is the date you entered.
+Printed to the console is the email you entered.
 
 Next you try submitting the form, but to your dismay the client-side validation starts failing saying "Invalid Email Address". 
 

@@ -1,67 +1,89 @@
-/* 
- * default css from http://html5boilerplate.com;
- * additional styles by andre bluehs
- */
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-audio:not([controls]) { display: none; }
-[hidden] { display: none; }
-html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body { margin: 0; font-size: 14px; background-color: #09213B; line-height:1.3em;}
-body, button, input, select, textarea { font-family: Ubuntu, sans-serif; color: #AEB1B5; }
-a { color: #1B61AB; text-decoration:none;}
-a:visited { color: #1B61AB; }
-a:hover { color: #06e; }
-a:focus { outline: thin dotted; }
-a:hover, a:active { outline: 0; }
-abbr[title] { border-bottom: 1px dotted; }
-b, strong { font-weight: bold; text-transform: uppercase;}
-blockquote { margin: 1em 40px; }
-dfn { font-style: italic; }
-hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
-ins { background: #ff9; color: #000; text-decoration: none; }
-mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
-pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
-pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-q { quotes: none; }
-q:before, q:after { content: ""; content: none; }
-small { font-size: 85%; }
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
-ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
-dd { margin: 0 0 0 40px; }
-nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
-img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
-svg:not(:root) { overflow: hidden; }
-figure { margin: 0; }
-form { margin: 0; }
-fieldset { border: 0; margin: 0; padding: 0; }
-label { cursor: pointer; }
-legend { border: 0; *margin-left: -7px; padding: 0; }
-button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
-button, input { line-height: normal; *overflow: visible; }
-input, textarea {background-color: #2F3C4A; border:1px solid #556B82; margin:3px;}
-table button, table input { *overflow: auto; }
-button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
-input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
-button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
-textarea { overflow: auto; vertical-align: top; resize: vertical; }
-input:valid, textarea:valid {  }
-input:invalid, textarea:invalid { background-color: #f0dddd; }
-table { border-collapse: collapse; border-spacing: 0; }
-td { vertical-align: top; }
+/* http://fonts.googleapis.com/css?family=Ubuntu:500 */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/OsJ2DjdpjqFRVUSto6IffLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Ubuntu Light'), local('Ubuntu-Light'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/_aijTyevf54tkVDLy-dlnLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
 
-.float-left {position: relative; float: left;}
-.float-right {position: relative; float: right;}
-.clearfix { clear: both; zoom: 1; }
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
+/*! addition styles by andre bluehs http://andrebluehs.net */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+audio:not([controls]){display:none;height:0}
+[hidden]{display:none}
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+html,button,input,select,textarea{font-family:sans-serif}
+body{margin:0;background: #E9E8ED;color: #475057;font-family: Ubuntu, sans-serif;}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+a,a:visited{font-weight:bold;color:rgb(96, 118, 211);}
+a:hover{text-decoration:underline;color:rgb(69, 82, 139);}
+h1{font-size:2em;margin:.67em 0}
+h2{font-size:1.5em;margin:.83em 0}
+h3{font-size:1.17em;margin:1em 0}
+h4{font-size:1em;margin:1.33em 0}
+h5{font-size:.83em;margin:1.67em 0}
+h6{font-size:.75em;margin:2.33em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+blockquote{margin:1em 40px}
+dfn{font-style:italic}
+mark{background:#ff0;color:#000}
+p,pre{margin:1em 0}
+code,kbd,pre,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}
+pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}
+q{quotes:none}
+q:before,q:after{content:'';content:none}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+dl,menu,ol,ul{margin:1em 0}
+dd{margin:0 0 0 40px}
+menu,ol,ul{padding:0 0 0 40px}
+nav ul,nav ol{list-style:none;list-style-image:none}
+img{border:0;-ms-interpolation-mode:bicubic}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+form{margin:0}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0;white-space:normal;*margin-left:-7px}
+button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}
+button,input{line-height:normal}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}
+button[disabled],input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
 
-#container {width: 900px; margin: auto;}
-#header {font-size: 52px; padding-top: 30px;}
-#header-text, .header-nav-link {padding-right: 30px;}
-#main {padding: 30px 0px; width: 600px; margin:auto;}
-code { background-color: #080888; display: inline-block; padding: 0px 5px; }
-
-.postsubject {line-height:2em;border-bottom: 1px solid #AEB1B5;}
+/* additional styles */
+body, html, #container {height: 100%;width: 100%;}
+#contact {position: relative;z-index: 10;width: 100%;height: 100%;background: #475057;color: #E9E8ED;padding-top: 68px;}
+#right {text-align: right;padding-right: 10%;height: 170px;top: 50%;position: relative;margin-top: -85px;}
+#center {text-align: left;position: relative;padding-top: 20px;width: 60%;margin: auto;}
+#right h1 {font-size: 6em;margin:0;}
+.horizontal {list-style:none;padding:0;margin:0;}
+.horizontal li {display: inline;}
+.horizontal li a {text-decoration: none;font-size: 2em;margin-left: 20px;}
+#caller-obj {display:none;padding-top: 15px;}
+#header {position: relative;z-index: 20;width: 100%;height: 68px;color: #E9E8ED;background: #475057;}
+#header-left {display:inline-block;width: 20%;padding-left: 10%;text-align: left;}
+#header-right {display: inline-block;width: 59%;padding-right: 10%;text-align: right;}
+#header-right .horizontal li a:hover {color:rgb(235, 237, 243);}
+#header-home, #header-home:hover, #header-home:visited, #header-home:active {text-decoration:none; color: #E9E8ED;}
+.post {padding-bottom: 40px;font-family:'Ubuntu Light', sans-serif;}
+#rrs, #older, #newer {margin: 10px 0;}
+#rss a, #older a, #newer a {color: #6E6E6E;text-decoration:none;}
+#older {position:relative;float:left;}
+#newer {position:relative;float:right;}
+#sub-header {text-align: center;background: #C1BFC7;padding: 1px 0;}

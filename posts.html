@@ -1,32 +1,30 @@
 ---
-title: Blog
+title: andrebluehs dot net blog
 layout: default
 ---
-<div>
-<a href="http://feeds.feedburner.com/andrebluehs">rss feed</a>
-</div>
-
-{% for post in paginator.posts %}
-    <div class='post'>
-        <div class='date'>{{ post.date | date: "%m/%d/%Y" }}</div>
-        <h1>
-            <a href='{{ post.url }}'>{{ post.title }}</a>
-        </h2>
-        {{ post.content }}
+<div id='center'>
+    {% for post in paginator.posts %}
+        <div class='post'>
+            <h1>
+                <a href='{{ post.url }}'>{{ post.title }}</a>
+            </h2>
+            {{ post.content }}
+        </div>
+    {% endfor %}
+    <div class="navigation">
+        {% if paginator.next_page %}
+            <div id='older'>
+                <a href="/page{{paginator.next_page}}">Older Entries</a>
+            </div>
+        {% endif %}
+        {% if paginator.previous_page %}
+            <div id='newer'>
+                <a href="/page{{paginator.previous_page}}">Newer Entries</a>
+            </div>
+        {% endif %}
+        <div style='clear:both;'><div>
     </div>
-    <hr />
-{% endfor %}
-
-<div class="navigation">
-    {% if paginator.previous_page %}
-        <div class='float-left'>
-            <a href="/page{{paginator.previous_page}}" class="previous"><< Newer Entries</a>
-        </div>
-    {% endif %}
-    {% if paginator.next_page %}
-        <div class='float-right'>
-            <a href="/page{{paginator.next_page}}" class="next ">Older Entries >></a>
-        </div>
-    {% endif %}
-    <div class='clearfix'><div>
+    <div id='rss'>
+        <a href="http://feeds.feedburner.com/andrebluehs">rss feed</a>
+    </div>
 </div>

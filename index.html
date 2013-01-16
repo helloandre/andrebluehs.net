@@ -1,12 +1,17 @@
 ---
-layout: default
-title: Home
+title: andrebluehs dot net
+layout: index
 ---
-<p>Well, hello there! I'm Andre Bluehs.</p>
-
-<p>Open source projects on <a href="https://github.com/helloandre">github</a>. Non-open source projects on <a href='/projects'>projects page</a>.
-
-<p>Email is <span id='stuff'></span></p>
+<div id='right'>
+    <h1>andre bluehs</h1>
+    <ul class='horizontal'>
+        <li><a id='location'>email</a></li>
+        <li><a href='http://twitter.com/helloandre' target='_blank'>twitter</a></li>
+        <li><a href='http://github.com/helloandre' target='_blank'>github</a></li>
+        <li><a href='http://stackoverflow.com/users/50/helloandre' target='_blank'>stackoverflow</a></li>
+        <li><a href='/posts'>blog</a></li>
+    </ul>
+</div>
 <script>
-    document.getElementById('stuff').innerHTML = 'hello' + '@' + window.location.host;
+    document.getElementById('location').href = 'mailto:hello' + '@' + window.location.host;
 </script>
