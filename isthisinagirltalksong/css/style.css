@@ -5,16 +5,18 @@
   src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/OsJ2DjdpjqFRVUSto6IffLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
 
-#itiagts {text-align: left;position: relative;padding-top: 20px;width: 860px;margin: auto;}
+body{background: #E9E8ED;color: #475057;}
+#itiagts {text-align: left;position: relative;padding-top: 20px;width: 860px;margin: auto;min-height: 500px;}
 #input {width: 600px;margin:auto;}
 #search {padding: 4px;border-radius: 5px;outline:none;}
-.sample {padding: 6px;cursor: pointer;border-bottom: 1px solid #ccc;}
-.sample:hover{background: #ccc;}
-.clicked{background:#C5FFBB;}
-#playing{font-size:12px;padding:3px;background-color:#999;color:#fff;}
+.result {padding: 6px;cursor: pointer;border-bottom: 1px solid #ccc;}
+.result:hover{background: #ccc;}
+.selected{background:#C5FFBB;}
+#playing{font-size:13px;padding:2px 6px;background-color:#999;color:#fff;margin-left:10px;border-radius:5px;}
 .found {font-weight: bold;color:black;}
 #vid-title{text-align:center;font-size:29px;font-weight: bold;}
-#result {padding-top: 20px;min-height: 500px;}
+#results {padding-top: 20px;min-height:175px;}
+#video {min-height:550px;}
 #no{font-size: 100px;font-weight: bold;text-align: center;}
 a {color: #999;}
 #footer{font-size:11px;color:#777;}
