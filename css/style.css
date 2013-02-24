@@ -67,7 +67,7 @@ textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
 
 /* additional styles */
-body, html, #container {height: 100%;width: 100%;min-width:480px;}
+body, html, #container {height: 100%;width: 100%;}
 #contact {position: relative;z-index: 10;width: 100%;height: 100%;background: #475057;color: #E9E8ED;padding-top: 68px;}
 #right {text-align: right;padding-right: 10%;height: 170px;top: 50%;position: relative;margin-top: -85px;}
 #center {text-align: left;position: relative;padding-top: 20px;width: 60%;margin: auto;}
@@ -105,4 +105,9 @@ body, html, #container {height: 100%;width: 100%;min-width:480px;}
     #sub-header h1 {font-size:1em;}
     #center {width:90%;}
     #right h1 {font-size:4em;}
+}
+
+@media (max-width: 480px) {
+    .horizontal li {display:block;}
+    #right h1 {font-size:2em;}
 }
