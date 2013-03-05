@@ -2,7 +2,7 @@ url:         http://andrebluehs.net
 baseurl:    /
 
 pygments:    true
-permalink:   /blog/:year/:month/:title/
+permalink:   /blog/:title/
 paginate:    3
 paginate_file: posts.html
 
