@@ -108,6 +108,7 @@ body, html, #container {height: 100%;width: 100%;}
 }
 
 @media (max-width: 480px) {
-    .horizontal li {display:block;}
+    #right .horizontal li {display:block;}
     #right h1 {font-size:2em;}
+    #header-right .horizontal li a {font-size: 0.8em;margin-left:7px;}
 }
