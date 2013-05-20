@@ -1,10 +1,5 @@
-url:         http://andrebluehs.net
-baseurl:    /
+url: http://andrebluehs.net
 
-pygments:    true
-permalink:   /blog/:title/
-paginate:    3
-paginate_file: posts.html
+permalink: /blog/:title/
 
-exclude: README.md, ideas.txt
-
+exclude: [README.md]
