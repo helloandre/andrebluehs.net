@@ -3,3 +3,5 @@ url: http://andrebluehs.net
 permalink: /blog/:title/
 
 exclude: [README.md]
+
+pygments: false
