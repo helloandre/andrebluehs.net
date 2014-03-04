@@ -11,9 +11,9 @@ A few weeks ago while at the gym I tweaked my back. Flash forward another two we
 
 Part of the problem was that I have horrible posture when sitting down.
 
-So I decided to give a standing desk a try. While my setup isn't perfect (the keyboard and track pad are too high. also it's a chair standing on a desk), after a solid week of using it I think I will be investing in a proper standing desk arrangement.
+So I decided to give a standing desk a try. While my setup isn't perfect (the keyboard and track pad are too high. also it's a chair standing on a desk), after a solid week of using it I think I will be investing in a proper standing desk arrangement, it has really improved my back that much.
 
-But I'm not going to talk about the [health benefits](https://www.google.com/search?q=standing+desk+health+benefits). I'm going to talk about the ansiliary benefits of not sittind down while being at a computer.
+But I'm not going to talk about the [health benefits](https://www.google.com/search?q=standing+desk+health+benefits). I'm going to talk about the ansiliary benefits of not sitting down while being at a computer.
 
 ## Why It's Awesome
 
