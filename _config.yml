@@ -4,4 +4,4 @@ permalink: /blog/:title/
 
 exclude: [README.md]
 
-pygments: false
+highlighter: pygments

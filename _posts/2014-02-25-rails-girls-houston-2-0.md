@@ -5,7 +5,7 @@ layout: post
 ---
 This weekend I participated in the second (semi annual, hopefully) [Rails Girls](http://railsgirls.com/houston) Houston event and it was an absolute blast.
 
-![coaching](http://farm4.staticflickr.com/3733/12751155064_c37725a666_b.jpg "Me Coaching")
+![coaching](//farm4.staticflickr.com/3733/12751155064_c37725a666_b.jpg "Me Coaching")
 
 For those of you not familar with Rails Girls, this is what went down.
 
@@ -31,7 +31,7 @@ If you are interested in participating in a Rails Girls event near you, checkout
 
 Of me in a chef's hat immediately after hitting Paul in the face with a plate of whipped cream.
 
-![Creamy](http://farm8.staticflickr.com/7425/12750891125_7c4ee2151e_z.jpg "Creamy")
+![Creamy](//farm8.staticflickr.com/7425/12750891125_7c4ee2151e_z.jpg "Creamy")
 
 
 [^foot1]: I say girls, but really there was a wide range ages.
