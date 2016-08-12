@@ -69,7 +69,7 @@ table{border-collapse:collapse;border-spacing:0}
 /* additional styles */
 body, html, #container {height: 100%;width: 100%;}
 #contact {position: relative;z-index: 10;width: 100%;height: 100%;background: #475057;color: #E9E8ED;padding-top: 68px;}
-#right {text-align: right;padding-right: 10%;height: 170px;top: 50%;position: relative;margin-top: -85px;}
+#right {text-align: right;padding-right: 10%;height: 170px;top: 50%;position: relative;transform:translateY(-50%);}
 #center {text-align: left;position: relative;padding-top: 20px;width: 60%;margin: auto;}
 #right h1 {font-size: 6em;margin:0;}
 .horizontal {list-style:none;padding:0;margin:0;}
