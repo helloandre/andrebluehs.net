@@ -6,18 +6,34 @@ date: 2012-05-10
 
 I wanted to convert a file from AVI (mpeg2, mp3) to MP4 (mpeg4, aac) to be able to play it on another device (one without VLC). I found a 'helpful' post on how to [do this](http://www.catswhocode.com/blog/19-ffmpeg-commands-for-all-needs), but the commands were for a much much older (2008) version of ffmpeg. I then came across a [ubuntu forums post](http://ubuntuforums.org/showthread.php?t=1328537) that used the same commands but updated for the neweer (but still 2009) version of ffmpeg. After a little more fiddling, I finally found something that worked fantastic!
 
-# Caveats:
+# updated 2017-02-12
 
- - I ran the below command on OSX with ffmpeg installed from homebrew. YMMV as far as codec availability goes.
- - I got up to ~200 frames per second on a Macbook Air with a 1.7 Gh i5, which took a 2.25 hour movie about 30 minutes to complete.
+There are some new kids in town when it comes to best practices. 
+
+First of all we want to use the [built-in AAC encoder](http://trac.ffmpeg.org/wiki/Encode/AAC#NativeFFmpegAACencoder) with ffmpeg now. Secondly we want to use.
+
+Secondly we want to use H.264 instead of `-vcodec mpeg4` and just let it do it's thing without messing with the bitrate. Also, we want to use a [Constant Rate Factor](http://slhck.info/articles/crf) for h.264.
 
 # TL;DR
 
 ### If you don't know what most or all of the below command means, you should probably read this entire post first.
 
+    ffmpeg -i input.avi -c:a aac -b:a 128k -c:v libx264 -crf 23 output.mp4
+    
+thanks to Werner Robitza for motivating me to update this and researching the new hotness.
+
+#original post from 2012-05-10
+
+# Caveats:
+
+ - I ran the below command on OSX with ffmpeg installed from homebrew. YMMV as far as codec availability goes.
+ - I got up to ~200 frames per second on a Macbook Air with a 1.7 Gh i5, which took a 2.25 hour movie about 30 minutes to complete.
+
 If you've already got ffmpeg and an appropriate aac encoder, here's the ffmpeg command you'll need:
 
-    ffmpeg -i input.avi -acodec libfaac -b:a 128k -vcodec mpeg4 -b:v 1200k -flags +aic+mv4 output.mp4
+NOTE: this is the old and busted command. see updated command above.
+
+    ~ffmpeg -i input.avi -acodec libfaac -b:a 128k -vcodec mpeg4 -b:v 1200k -flags +aic+mv4 output.mp4~
 
 # The long story
 
