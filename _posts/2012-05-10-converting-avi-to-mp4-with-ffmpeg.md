@@ -20,9 +20,9 @@ Secondly we want to use H.264 instead of `-vcodec mpeg4` and just let it do it's
 
     ffmpeg -i input.avi -c:a aac -b:a 128k -c:v libx264 -crf 23 output.mp4
     
-thanks to Werner Robitza for motivating me to update this and researching the new hotness.
+thanks to [Werner Robitza](http://slhck.info) for motivating me to update this and researching the new hotness.
 
-#original post from 2012-05-10
+# original post from 2012-05-10
 
 # Caveats:
 
