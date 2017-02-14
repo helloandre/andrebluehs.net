@@ -10,7 +10,7 @@ I wanted to convert a file from AVI (mpeg2, mp3) to MP4 (mpeg4, aac) to be able 
 
 There are some new kids in town when it comes to best practices. 
 
-First of all we want to use the [built-in AAC encoder](http://trac.ffmpeg.org/wiki/Encode/AAC#NativeFFmpegAACencoder) with ffmpeg now. Secondly we want to use.
+First of all we want to use the [built-in AAC encoder](http://trac.ffmpeg.org/wiki/Encode/AAC#NativeFFmpegAACencoder) with ffmpeg now.
 
 Secondly we want to use H.264 instead of `-vcodec mpeg4` and just let it do it's thing without messing with the bitrate. Also, we want to use a [Constant Rate Factor](http://slhck.info/articles/crf) for h.264.
 
@@ -33,7 +33,7 @@ If you've already got ffmpeg and an appropriate aac encoder, here's the ffmpeg c
 
 NOTE: this is the old and busted command. see updated command above.
 
-    ~ffmpeg -i input.avi -acodec libfaac -b:a 128k -vcodec mpeg4 -b:v 1200k -flags +aic+mv4 output.mp4~
+~~ffmpeg -i input.avi -acodec libfaac -b:a 128k -vcodec mpeg4 -b:v 1200k -flags +aic+mv4 output.mp4~~
 
 # The long story
 
@@ -49,7 +49,7 @@ If you don't have `libogg` installed (which is likely) brew will choke and give 
 
 If you don't care much about how the actual ffmpeg command works, you can now run the below command (replacing 'input.avi' and 'output.mp4' with their respective values) and you're done.
 
-    ffmpeg -i input.avi -acodec libfaac -b:a 128k -vcodec mpeg4 -b:v 1200k -flags +aic+mv4 output.mp4
+~~ffmpeg -i input.avi -acodec libfaac -b:a 128k -vcodec mpeg4 -b:v 1200k -flags +aic+mv4 output.mp4~~
 
 ## ffmpeg command explained
 
