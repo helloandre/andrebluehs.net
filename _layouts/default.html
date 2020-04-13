@@ -8,9 +8,13 @@
     <meta name="description" content="andre bluehs personal website web development internet">
     <meta name="author" content="Andre Bluehs">
 
-    <link rel="shortcut icon" href="//abcdn.us/img/andrebluehs/favicon.png" />
-    <link rel="stylesheet" href="//abcdn.us/css/andrebluehs/style.css?v1">
-    <link rel="stylesheet" href="//abcdn.us/css/andrebluehs/solarized_light.css">
+    {% if jekyll.environment == "production" %}
+        <link rel="shortcut icon" href="{{ site.cdn_url }}/andre.blue/img/favicon.png" />
+        <link rel="stylesheet" href="{{ site.cdn_url }}/andre.blue/css/style.css">
+    {% else %}
+        <link rel="shortcut icon" href="http://localhost:4000/img/favicon.png" />
+        <link rel="stylesheet" href="http://localhost:4000/css/style.css">
+    {% endif %}
 </head>
 
 <body>
@@ -25,30 +29,17 @@
                     <li><a href='http://twitter.com/helloandre' target='_blank'>twitter</a></li>
                     <li><a href='https://github.com/helloandre' target='_blank'>github</a></li>
                     <li><a href='http://stackoverflow.com/users/50/helloandre' target='_blank'>stackoverflow</a></li>
-                    <li><a href='/posts'>blog</a></li>
+                    <li><a href='/blog'>blog</a></li>
                 </ul>
             </div>
         </div>
         {{ content }}
     </div>
     
-    <!-- syntax highlighting -->
-    <script src="//abcdn.us/js/andrebluehs/highlight.js"></script>
-    <script>
-        document.getElementById('location').href = 'mailto:hello' + '@' + window.location.host;
-        hljs.initHighlightingOnLoad();
-    </script>
-    
+    <script>document.getElementById('location').href = 'mailto:hello' + '@' + window.location.host;</script>
     <!-- google analytics -->
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-31275216-1']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-31275216-1"></script>
+    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-31275216-1');</script>
 </body>
 </html>

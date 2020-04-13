@@ -1,7 +1,4 @@
-url: http://andrebluehs.net
-
+url: https://andre.blue
 permalink: /blog/:title/
-
 exclude: [README.md]
-
-highlighter: pygments
+cdn_url: https://abcdn.us

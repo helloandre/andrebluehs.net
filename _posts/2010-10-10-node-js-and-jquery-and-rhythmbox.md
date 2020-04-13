@@ -2,13 +2,14 @@
 layout: post
 title: Node.js and jQuery and Rhythmbox
 ---
+
 I wrote a node.js server that listens on port 3000 (with an index page to be served by a regular server) that can do rudimentary control of rhythmbox.
 
 Dependencies:
 
- - Rhythmbox
- - Node.js
- - Express
+- Rhythmbox
+- Node.js
+- Express
 
 ##TLDR: [Download Playr from github][1].
 
@@ -28,7 +29,7 @@ I found a great web server framework that would do handily (expressjs) for deali
 
 ###Gotchas
 
-Because the port had to be different, I had to use jsonp to fetch data from the node.js server. What I couldn’t figure out is why sometimes the clicks sent out requests, and sometimes they didn’t. Browser caching is to blame. After setting $.ajax’s `cache` to false, it fired every time.
+Because the port had to be different, I had to use jsonp to fetch data from the node.js server. What I couldn’t figure out is why sometimes the clicks sent out requests, and sometimes they didn’t. Browser caching is to blame. After setting \$.ajax’s `cache` to false, it fired every time.
 
 ###Todos
 
@@ -39,4 +40,4 @@ Also I’d like to add in some volume controls too.
 If there is any way possible to get this server to run in user space on startup (or more likely login) please let me know. That would be awesome
 
 [1]: http://github.com/helloandre/playr
-[2]: https:/twitter.com/xanderal
+[2]: https://twitter.com/xanderal

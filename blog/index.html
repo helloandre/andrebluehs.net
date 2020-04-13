@@ -1,0 +1,19 @@
+---
+title: andrebluehs dot net blog
+layout: default
+---
+
+<div id="center">
+  <div id="rss">
+    <a href="http://feeds.feedburner.com/andrebluehs">rss feed</a>
+  </div>
+
+  {% for post in site.posts %}
+  <div class="post">
+    <h1>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h1>
+    {{ post.excerpt }}
+  </div>
+  {% endfor %}
+</div>

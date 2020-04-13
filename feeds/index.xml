@@ -2,21 +2,21 @@
 layout: feed
 ---
  <title>Andre Bluehs</title>
- <link href="http://andrebluehs.net/feed/" rel="self"/>
- <link href="http://andrebluehs.net/"/>
+ <link href="http://andre.blue/feed/" rel="self"/>
+ <link href="http://andre.blue/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://andrebluehs.net/</id>
+ <id>http://andre.blue/</id>
  <author>
    <name>Andre Bluehs</name>
-   <email>hello@andrebluehs.net</email>
+   <email>hello@andre.blue</email>
  </author>
 
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://andrebluehs.net{{ post.url }}"/>
+   <link href="http://andre.blue{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://andrebluehs.net.com{{ post.id }}</id>
+   <id>http://andre.blue{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
