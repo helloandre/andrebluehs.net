@@ -2,6 +2,7 @@
 layout: post
 title: Image Uploader and URL Shortener
 ---
+
 I recently purchased the url ablu.us with the intention of using it as a url shortener/image uploader. So i did.
 
 It was actually quite trivial, and I had the code for it done about 6 months ago, but didn't purchase the url till recently. I had created a photo uploader for another website I was working on ([newnantheatre.org][1]) so I just copied over the code (I wasn't getting paid anyway, so I felt it was ok to reuse the code). There are some improvements tho that I'll document here. However, I'm not actually going into the implementation of a url shortener or image uploader. You should take a weekend and figure this out for yourself. Or maybe I'll do a post on it later.
@@ -29,5 +30,5 @@ Or you can visit [http://ablu.us/][3] and copy the url you want to shorten and c
 I have written a [chrome extension][2] for this as well.
 
 [1]: http://newnantheatre.org
-[2]: http://andrebluehs.net/blog/2010/02/ablu-us-and-chrome-extensions/
+[2]: http://andre.blue/blog/2010/02/ablu-us-and-chrome-extensions/
 [3]: http://ablu.us
