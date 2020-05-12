@@ -6,6 +6,8 @@ layout: post
 
 Getting [code-server](https://github.com/cdr/code-server/) set up with Ubuntu 18.04 was a little tricky as their docs don't really get into the details of how to set things up... at all. So here's how to set up `code-server` on Ubuntu 18.04 on your own domain.
 
+Update 2020-05-09: A new version of code server has combined the `--port` and `--host` options into `--bind-addr` option, and removed the `--disable-ssh` option. This post has been updated to reflect these changes.
+
 ## 0. set up Ubuntu 18.04
 
 I won't get into the details here. My setup is a Digital Ocean droplet with 2 CPU and 2 GB of ram.
@@ -95,7 +97,7 @@ Type=simple
 User=<your user>
 Group=<your user>
 Environment=PASSWORD=changeme
-ExecStart=/bin/bash /home/<your user>/.code-server/code-server --host 127.0.0.1 --port 8181 --disable-ssh --user-data-dir /home/<your user>/.code-server/user-data --extensions-dir /home/<your user>/.code-server/extensions
+ExecStart=/bin/bash /home/<your user>/.code-server/code-server --bind-addr 127.0.0.1:8181 --user-data-dir /home/<your user>/.code-server/user-data --extensions-dir /home/<your user>/.code-server/extensions
 
 [Install]
 WantedBy=multi-user.target
