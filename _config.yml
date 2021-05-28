@@ -1,4 +1,4 @@
 url: https://andre.blue
 permalink: /blog/:title/
 exclude: [README.md]
-cdn_url: https://abcdn.us
+cdn_url: https://andre.blue

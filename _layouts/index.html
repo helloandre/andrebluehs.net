@@ -9,8 +9,8 @@
     <meta name="author" content="Andre Bluehs">
 
     {% if jekyll.environment == "production" %}
-        <link rel="shortcut icon" href="{{ site.cdn_url }}/andre.blue/img/favicon.png" />
-        <link rel="stylesheet" href="{{ site.cdn_url }}/andre.blue/css/style.css">
+        <link rel="shortcut icon" href="{{ site.cdn_url }}/img/favicon.png" />
+        <link rel="stylesheet" href="{{ site.cdn_url }}/css/style.css">
     {% else %}
         <link rel="shortcut icon" href="http://localhost:4000/img/favicon.png" />
         <link rel="stylesheet" href="http://localhost:4000/css/style.css">
@@ -20,11 +20,7 @@
     <div id='container'>
         {{ content }}
     </div>
-    <!-- google analytics -->
     <script>document.getElementById('location').href = 'mailto:hello' + '@' + window.location.host;</script>
-    <!-- google analytics -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-31275216-1"></script>
-    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-31275216-1');</script>
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2ce3f6908d65421b9f9acd054fe488d5"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
