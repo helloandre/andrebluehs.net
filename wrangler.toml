@@ -1,9 +1,0 @@
-name = "andre-blue"
-type = "webpack"
-zone_id = "889b4dd39b4c61eefa782e76a6651050"
-account_id = "f9f2b27c9d4c59bfb4c96c4f0cdeb845"
-route = "https://andre.blue/*"
-workers_dev = false
-
-[site]
-bucket = "./_site"
