@@ -1,0 +1,91 @@
+---
+import "../../styles/global.css";
+import "modern-normalize/modern-normalize.css";
+
+import type { CollectionEntry } from "astro:content";
+import { render, getCollection } from "astro:content";
+import Head from "../../components/Head.astro";
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+
+type Props = CollectionEntry<"blog">;
+const post = Astro.props;
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: post,
+  }));
+}
+
+const { Content } = await render(post);
+---
+
+<!doctype html>
+<html lang="en">
+  <Head title={post.data.title} />
+  <body>
+    <main id="container">
+      <Nav />
+      <section id="post">
+        <div id="sub-header">
+          <h1>{post.data.title}</h1>
+        </div>
+
+        <Content />
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  #post {
+    text-align: left;
+    position: relative;
+    padding-top: 20px;
+    width: 50%;
+    margin: auto;
+    line-height: 1.4em;
+    padding-bottom: 40px;
+    font-family: "Ubuntu Light", sans-serif;
+  }
+
+  #post img {
+    max-width: calc(100vw - 10%);
+  }
+
+  .highlight pre {
+    color: #fff;
+    padding: 0.7em;
+    border-radius: 3px;
+    overflow-x: scroll;
+  }
+  #post h1 {
+    line-height: 1.1em;
+    font-size: 2em;
+  }
+  #sub-header {
+    padding: 1px 0;
+  }
+
+  @media (max-width: 1220px) {
+    #sub-header h1 {
+      font-size: 1.5em;
+    }
+    #post {
+      width: 75%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #sub-header h1 {
+      font-size: 1em;
+    }
+    #post {
+      width: 90%;
+    }
+  }
+</style>

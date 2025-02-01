@@ -1,0 +1,49 @@
+---
+import Socials from "./Socials.astro";
+---
+
+<nav class="nav">
+  <section class="name">
+    <a href="/">andre bluehs</a>
+  </section>
+  <section class="socials">
+    <Socials theme="dark" />
+  </section>
+</nav>
+
+<style>
+  .nav {
+    height: 68px;
+    padding: 0 10%;
+
+    background: #272822;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav section {
+    flex-grow: 1;
+  }
+  .name a {
+    text-decoration: none;
+    font-size: 2em;
+    color: #fff;
+  }
+  .socials {
+    text-align: right;
+  }
+
+  @media (max-width: 480px) {
+    .nav {
+      flex-direction: column;
+      text-align: center;
+    }
+    .name a {
+      font-size: 1.5em;
+    }
+    .socials {
+      text-align: center;
+    }
+  }
+</style>

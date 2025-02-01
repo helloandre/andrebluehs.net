@@ -1,0 +1,55 @@
+---
+import "modern-normalize/modern-normalize.css";
+import "../styles/global.css";
+
+import Head from "../components/Head.astro";
+import Footer from "../components/Footer.astro";
+import Socials from "../components/Socials.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <Head title="andre bluehs" />
+
+  <body>
+    <main class="center">
+      <h1 class="name">andre bluehs</h1>
+      <Socials />
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    height: 100vh;
+    width: 100vw;
+    padding-right: 10%;
+    text-align: right;
+  }
+  .name {
+    font-size: 6em;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .name {
+      font-size: 4em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .center {
+      justify-content: start;
+      padding-top: 2em;
+    }
+    .name {
+      font-size: 2em;
+    }
+  }
+</style>

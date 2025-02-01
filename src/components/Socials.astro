@@ -1,0 +1,51 @@
+---
+const { theme } = Astro.props;
+const textColor = theme === "dark" ? "#fff" : "rgba(0, 0, 0, 0.87)";
+const smallSize = theme === "dark" ? "1em" : "2em";
+const smallPadding = theme === "dark" ? "0" : "2em";
+const smallDisplay = theme === "dark" ? "inline-block" : "block";
+---
+
+<section class="socials">
+  <div class="social">
+    <a id="location">email</a>
+  </div>
+  <div class="social">
+    <a href="https://github.com/helloandre" target="_blank">github</a>
+  </div>
+  <div class="social">
+    <a href="http://stackoverflow.com/users/50/helloandre" target="_blank">
+      stackoverflow
+    </a>
+  </div>
+</section>
+
+<script>
+  // @ts-expect-error
+  document.getElementById("location").href =
+    "mailto:hello" + "@" + window.location.host;
+</script>
+
+<style define:vars={{ textColor, smallSize, smallDisplay, smallPadding }}>
+  .social {
+    display: inline-block;
+    padding: 4px 8px 4px 8px;
+  }
+  .social a {
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--textColor);
+  }
+
+  @media (max-width: 480px) {
+    .socials {
+      padding-top: var(--smallPadding);
+    }
+    .social {
+      display: var(--smallDisplay);
+    }
+    .social a {
+      font-size: var(--smallSize);
+    }
+  }
+</style>

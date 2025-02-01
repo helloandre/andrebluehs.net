@@ -1,0 +1,39 @@
+@font-face {
+	font-family: "Ubuntu";
+	font-style: normal;
+	font-weight: 500;
+	src:
+		local("Ubuntu Medium"),
+		local("Ubuntu-Medium"),
+		url(https://themes.googleusercontent.com/static/fonts/ubuntu/v4/OsJ2DjdpjqFRVUSto6IffLO3LdcAZYWl9Si6vvxL-qU.woff)
+			format("woff");
+}
+@font-face {
+	font-family: "Ubuntu Light";
+	font-style: normal;
+	font-weight: 300;
+	src:
+		local("Ubuntu Light"),
+		local("Ubuntu-Light"),
+		url(https://themes.googleusercontent.com/static/fonts/ubuntu/v4/_aijTyevf54tkVDLy-dlnLO3LdcAZYWl9Si6vvxL-qU.woff)
+			format("woff");
+}
+
+body {
+	margin: 0;
+	background: #fff;
+	color: #424242;
+	font-family: Ubuntu, sans-serif;
+}
+a,
+a:visited,
+a:hover {
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.87);
+}
+body,
+html,
+#container {
+	height: 100%;
+	width: 100%;
+}
